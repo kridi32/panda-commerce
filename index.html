@@ -24,17 +24,17 @@
 <body>
     <header class="container-fluid">
         <!-- navbar -->
-        <div class="container-fluid bg-light">
-            <nav class="navbar navbar-expand-lg navbar-light container navbar-fixed">
+        <div class="container-fluid bg-light shadow-sm fixed-top">
+            <nav class="navbar navbar-expand-lg navbar-light  container navbar-fixed">
                 <div class="container-fluid ">
                     <a class="navbar-brand" href="#"><img src="images/logo.png" alt="" class="navbar-brand"></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+                        <span class="navbar-toggler-icon ms-auto"></span>
                     </button>
                     <div class="form ms-auto w-50 ">
-                        <form class="d-flex">
+                        <form class=" d-sm-none d-lg-block">
                             <input class="form-control me-2" type="search" placeholder="Search Products"
                                 aria-label="Search">
 
@@ -49,18 +49,18 @@
                                 <a class="nav-link active" aria-current="page" href="#">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Products</a>
+                                <a class="nav-link" href="#categories">Categories</a>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Shoes</a>
+                                <a class="nav-link" href="#shoe">Shoes</a>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Backpacks</a>
+                                <a class="nav-link" href="#backpack">Backpacks</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Subscribe</a>
+                                <a class="nav-link" href="#subscribe">Subscribe</a>
                             </li>
 
                         </ul>
@@ -69,7 +69,7 @@
             </nav>
         </div>
         <!-- carousel  -->
-        <section class="container ">
+        <section class="container mt-5">
             <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item p-5 active">
@@ -147,7 +147,7 @@
     </header>
     <main>
         <!-- product categories -->
-        <section class="container mt-4">
+        <section class="container my-4" id="categories">
             <div class=" overflow-hidden">
                 <h1 class="mb-2">Categories</h1>
                 <div class="row gy-5">
@@ -171,25 +171,125 @@
                                 alt="">
                         </div>
                     </div>
-
-
                 </div>
             </div>
+        </section>
 
 
+        <!-- product section  -->
+        <section class="container-fluid bg-ash">
+            <div class="shoes container pb-5" id="shoe">
+                <div class="d-flex align-items-center justify-content-between py-3">
+                    <h1>Shoes</h1>
+                    <a href="#" class="text-decoration-none" style="color: orangered;">See more</a>
+                </div>
+                <div class="row g-3">
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="card">
+                            <img src="images/shoes/shoe-1.png" class="card-img-top" alt="...">
+                            <div class="card-body d-flex flex-column align-items-center p-4">
+                                <h4 class="card-title">Adidas Yeezy Boost</h4>
+                                <p class="card-text text-center">Developed by Kanye West, the Adidas Yeezy Boost 350 V2 is the
+                                    latest version of the popular 350 mode</p>
+                                <h3>$729.99</h3>
+                                <a href="#" class=""><button class="btn btn-dark text-light">Buy now <i
+                                    class="fas fa-arrow-right fw-light ms-2"></i></button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="card">
+                            <img src="images/shoes/shoe-2.png" class="card-img-top" alt="...">
+                            <div class="card-body d-flex flex-column align-items-center p-4">
+                                <h4 class="card-title">Nike Air Jordan</h4>
+                                <p class="card-text text-center">Sole Made By Quality Rubber,Anti-Slip,Wearing-resisting.Friction Design Easy Control Of The Soccer. </p>
+                                <h3>$449.99</h3>
+                                <a href="#" class=""><button class="btn btn-dark text-light">Buy now<i
+                                    class="fas fa-arrow-right fw-light ms-2"></i></button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="card">
+                            <img src="images/shoes/shoe-3.png" class="card-img-top" alt="...">
+                            <div class="card-body d-flex flex-column align-items-center p-4">
+                                <h4 class="card-title">Nike Air Max</h4>
+                                <p class="card-text text-center">The Nike Air Max 270 Running Shoe is designed for maximum support of the entire foot. The unit on the heel offers reactive miles. </p>
+                                <h3>$249.99</h3>
+                                <a href="#" class=""><button class="btn btn-dark text-light">Buy now <i
+                                    class="fas fa-arrow-right fw-light ms-2"></i></button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- product section  -->
+        <section class="container-fluid bg-ash">
+            <div class="shoes container pb-5" id="backpack">
+                <div class="d-flex align-items-center justify-content-between py-3">
+                    <h1>Backpacks</h1>
+                    <a href="#" class="text-decoration-none" style="color: orangered;">See more</a>
+                </div>
+                <div class="row g-3">
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="card">
+                            <img src="images/bags/bag-1.png" class="card-img-top" alt="...">
+                            <div class="card-body d-flex flex-column align-items-center p-4">
+                                <h4 class="card-title">OGIO Renegade RSS</h4>
+                                <p class="card-text text-center">Armor protected dedicated laptop compartment with RSS fits most 15 Inch laptops</p>
+                                <h3>$148.49</h3>
+                                <a href="#" class=""><button class="btn btn-dark text-light">Buy now <i
+                                    class="fas fa-arrow-right fw-light ms-2"></i></button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="card">
+                            <img src="images/bags/bag-2.png" class="card-img-top" alt="...">
+                            <div class="card-body d-flex flex-column align-items-center p-4">
+                                <h4 class="card-title">BURTON New Tinder 2.0</h4>
+                                <p class="card-text text-center">Dual side water bottle pockets; Internal zippered mesh pocket with key clip; Multiple external accessory pockets </p>
+                                <h3>$79.99</h3>
+                                <a href="#" class=""><button class="btn btn-dark text-light">Buy now<i
+                                    class="fas fa-arrow-right fw-light ms-2"></i></button></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="card">
+                            <img src="images/bags/bag-3.png" class="card-img-top" alt="...">
+                            <div class="card-body d-flex flex-column align-items-center p-4">
+                                <h4 class="card-title">Burton Spruce Backpack</h4>
+                                <p class="card-text text-center">nternal drop pocket, Internal waterproof laminated mesh pocket with key clip, water bottle pockets, fleece-lined accessory pocket</p>
+                                <h3>$179.99</h3>
+                                <a href="#" class=""><button class="btn btn-dark text-light">Buy now <i
+                                    class="fas fa-arrow-right fw-light ms-2"></i></button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- newsletter section  -->
+        <section class="container-fluid bg-pink  py-5" id="subscribe">
+            <div class="container d-flex flex-column align-items-center my-3 py-5 ">
+                <h2 class="mb-2">Subscribe to our weekly newsletter<sup>*</sup></h2>
+                <p> * Additional email charges will apply</p>
+                <div class="input-group mb-3 w-50">
+                    <input type="email" class="form-control border border-success" placeholder="Enter e-mail address"
+                        aria-label="Username" aria-describedby="basic-addon1">
+                    <button class="btn btn-outline-success bg-success text-light" type="submit"
+                        id="button-addon2">Submit</button>
+                </div>
+            </div>
         </section>
     </main>
     <footer>
-        
-        <div class="container d-flex flex-column align-items-center my-3">
-            <h2 class="mb-2">Subscribe to our weekly newsletter<sup>*</sup></h2>
-            <p> * Additional email charges will apply</p>
-            <div class="input-group mb-3 w-50">
-                <input type="email" class="form-control border border-success" placeholder="Enter e-mail address" aria-label="Username" aria-describedby="basic-addon1">
-                <button class="btn btn-outline-success bg-success text-light" type="submit" id="button-addon2">Submit</button>
-              </div>
+        <div class="container text-center py-2">
+            <p class="p-0 m-0">© Panda commerce ltd. All rights reserved</p>
         </div>
-          
     </footer>
     <!-- bootstrap javascript -->
     <script src="js/bootstrap.bundle.min.js"></script>
